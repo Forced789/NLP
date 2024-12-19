@@ -1,0 +1,35 @@
+h1 {
+    color: #0077cc;
+    text-align: center;
+}
+
+.stTextInput > div > div > input {
+    border: 2px solid #0077cc;
+    border-radius: 5px;
+}
+
+.stTextArea > div > textarea {
+    border: 2px solid #0077cc;
+    border-radius: 5px;
+}
+
+.stButton > button {
+    background-color: #0077cc;
+    color: white;
+    border-radius: 5px;
+}
+
+.stButton > button:hover {
+    background-color: #005fa3;
+}
+
+/* 强制修改整个背景为渐变颜色 */
+html, body, [data-testid="stAppViewContainer"], [data-testid="stApp"] {
+    background: linear-gradient(to bottom, #8ecfde, #ffffff) !important; /* 渐变背景 从浅蓝到白色 */
+}
+
+/* 修改 Streamlit 顶部导航栏颜色 */
+header[data-testid="stHeader"] {
+    background-color: #000000 !important; /* 自定义导航栏背景颜色 */
+    color: #ffffff !important; /* 文字颜色 */
+}
